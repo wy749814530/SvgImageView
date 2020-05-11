@@ -1,5 +1,22 @@
 #Android SVG 矢量图做主题换肤
-#使用方式
+
+##Step 1. Add the JitPack repository to your build file
+```java
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+##Step 2. Add the dependency   
+```java
+ dependencies {
+	        implementation 'com.github.wy749814530:SvgImageView:1.1.1'
+	}
+```
+
+##Step 3    
 ```java
     <com.svg.SvgImageView
         android:id="@+id/svgImageView"
