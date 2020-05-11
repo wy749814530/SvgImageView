@@ -43,4 +43,4 @@
     }
 
 ```
-![alt 属性文本](https://github.com/wy749814530/SvgImageView/blob/master/res/4C25A000C5F25BFEDB90AE3A005755B7.jpg)
+![Image](https://github.com/wy749814530/SvgImageView/blob/master/res/4C25A000C5F25BFEDB90AE3A005755B7.jpg)
