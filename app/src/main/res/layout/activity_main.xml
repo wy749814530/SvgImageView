@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appL="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.svg.SvgImageView
+        android:id="@+id/CRAImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="18dp"
+        appL:image="@drawable/ic_car"
+        appL:paintColor="@android:color/holo_red_dark" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick1"
+        android:text="第一层" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick2"
+        android:text="第二层" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick3"
+        android:text="第三层" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onViewClick4"
+        android:text="第四层" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onPathClick1"
+        android:text="Path 1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onPathClick2"
+        android:text="Path 2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onPathClick3"
+        android:text="Path 3" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onPathClickAll"
+        android:text="Path All" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onRestore"
+        android:text="重置" />
+</LinearLayout>

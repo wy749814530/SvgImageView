@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="SvgView_Style">
+        <attr name="paintColor" format="color|reference" />
+        <attr name="image" format="reference" />
+    </declare-styleable>
+</resources>
