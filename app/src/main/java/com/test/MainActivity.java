@@ -9,50 +9,70 @@ import com.svg.SvgImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    SvgImageView craImageView;
+    SvgImageView svgImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        craImageView = findViewById(R.id.CRAImageView);
+        svgImageView = findViewById(R.id.svgImageView);
     }
 
+    /**
+     * 修改图层颜色
+     *
+     * @param view
+     */
     public void onViewClick1(View view) {
-        craImageView.setGroupColorByIndex(0, getResources().getColor(R.color.colorAccent));
+        svgImageView.setGroupColorByIndex(0, getResources().getColor(R.color.colorAccent));
     }
 
     public void onViewClick2(View view) {
-        craImageView.setGroupColorByIndex(1, getResources().getColor(R.color.colorAaccee));
+        svgImageView.setGroupColorByIndex(1, getResources().getColor(R.color.colorAaccee));
     }
 
     public void onViewClick3(View view) {
-        craImageView.setGroupColorByIndex(2, getResources().getColor(R.color.blue));
+        svgImageView.setGroupColorByIndex(2, getResources().getColor(R.color.blue));
     }
 
     public void onViewClick4(View view) {
-        craImageView.setGroupColorByIndex(3, getResources().getColor(R.color.red));
+        svgImageView.setGroupColorByIndex(3, getResources().getColor(R.color.red));
     }
 
+    /**
+     * 修改Path颜色
+     *
+     * @param view
+     */
     public void onPathClick1(View view) {
-        craImageView.setPathColorByIndex(0, getResources().getColor(R.color.colorAccent));
+        svgImageView.setPathColorByIndex(0, getResources().getColor(R.color.colorAccent));
     }
 
     public void onPathClick2(View view) {
-        craImageView.setPathColorByIndex(1, getResources().getColor(R.color.colorAccent));
+        svgImageView.setPathColorByIndex(1, getResources().getColor(R.color.colorAccent));
     }
 
     public void onPathClick3(View view) {
-        craImageView.setPathColorByIndex(2, getResources().getColor(R.color.colorAccent));
+        svgImageView.setPathColorByIndex(2, getResources().getColor(R.color.colorAccent));
     }
 
+    /**
+     * 修改所以Path颜色
+     *
+     * @param view
+     */
     public void onPathClickAll(View view) {
-        craImageView.setPathsColor(getResources().getColor(R.color.colorAccent));
+        svgImageView.setPathsColor(getResources().getColor(R.color.colorAccent));
     }
 
+    /**
+     * 还原SVG图原始色
+     *
+     * @param view
+     */
     public void onRestore(View view) {
-        craImageView.resetColors();
+        svgImageView.resetColors();
     }
 
 }
